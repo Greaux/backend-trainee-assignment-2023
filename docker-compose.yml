@@ -1,5 +1,14 @@
 version: '3'
 services:
+  db:
+    image: postgres:latest
+    ports: 
+      - 5432:5432
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=BESOPASNIYPAROL
+      - POSTGRES_DB=AvitoTech
   app:
     build:
       context: .
@@ -14,12 +23,3 @@ services:
       - DB_NAME=AvitoTech
       - DB_USER=postgres
       - DB_PASSWORD=BESOPASNIYPAROL
-  db:
-    image: postgres:latest
-    restart: always
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=BESOPASNIYPAROL
-      - POSTGRES_DB=yourdb
-    ports: 
-      - 5432:5432

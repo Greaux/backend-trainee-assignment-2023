@@ -4,6 +4,7 @@ import (
 	"log"
 	"net/http"
 	"strings"
+	"time"
 
 	"github.com/gofiber/fiber/v2"
 	"gorm.io/driver/postgres"
@@ -180,7 +181,7 @@ func (app *App) MainPage(c *fiber.Ctx) error {
 
 func main() {
 	app := &App{}
-
+	time.Sleep(2 * time.Second)
 	app.Initialize()
 
 	appFiber := fiber.New()
