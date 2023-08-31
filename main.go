@@ -181,6 +181,7 @@ func (app *App) MainPage(c *fiber.Ctx) error {
 
 func main() {
 	app := &App{}
+
 	time.Sleep(2 * time.Second)
 	app.Initialize()
 
@@ -193,7 +194,7 @@ func main() {
 	// Для создания сегмента нужно в Body запроса добавить ключ Name и значение(уникальное)
 
 	appFiber.Post("/editUserSegments", app.AddUserToSegment)
-	// Для создания пользователя в сегмент нужно в Body запроса добавить ключ userid и значение(UserID), а так же список slug (названий) сегментов которые нужно добавить пользователю
+	// Для добавления пользователя в сегмент нужно в Body запроса добавить ключ userid и значение(UserID), а так же список slug (названий) сегментов которые нужно добавить пользователю
 
 	appFiber.Delete("/editUserSegments", app.RemUserFromSegment)
 	// Для удаления у пользователя сегментов нужно в Body запроса добавить ключ userid и значение(UserID), а так же список slug (названий) сегментов которые нужно добавить пользователю
