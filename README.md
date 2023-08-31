@@ -132,5 +132,24 @@ GET /username/:Username
 - `ID` - ID сегмента
 - `Name` - Имя сегмента
 - `Users` - null
-		
+
+
 ![Пример запроса (POSTMAN)](https://raw.githubusercontent.com/Greaux/backend-trainee-assignment-2023/main/Screenshots/%D0%9F%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%B5%D0%B3%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D1%8E%D0%B7%D0%B5%D1%80%D0%B0%20%D0%BF%D0%BE%20UserName.png)
+
+
+## Схема БД
+Ниже приведена схема базы данных создаваемая в PostgreSQL для работы сервиса
+
+(Если плохо видно таблицу за счет прозрачности, нажмите на изображение, видимо проблема с кэшированием github'a)
+
+![enter image description here](https://raw.githubusercontent.com/Greaux/backend-trainee-assignment-2023/main/Screenshots/%D0%A1%D1%85%D0%B5%D0%BC%D0%B0%D0%91%D0%94.png)
+В БД 3 таблицы: 
+1) Таблица пользователей
+`PK - ID`
+`Text - Username`
+2) Таблица сегментов
+`PK - ID`
+`Text - Name`
+3) Таблица отношения пользователей к сегментам:
+`FK1 - segment_id`
+`FK2 - user_id`
