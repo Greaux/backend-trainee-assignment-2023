@@ -35,6 +35,7 @@ GORM - https://gorm.io
 
 ### Создание юзера
 POST /users
+
 Добавление user в БД.
 
 Тело запроса:
@@ -49,6 +50,7 @@ POST /users
 ![Пример запроса (POSTMAN)](https://raw.githubusercontent.com/Greaux/backend-trainee-assignment-2023/main/Screenshots/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%D0%AE%D0%B7%D0%B5%D1%80%D0%B0.png)
 ### Создание сегмента:
 POST /segments
+
 Добавление сегмента в БД.
 
 Тело запроса: 
@@ -62,6 +64,7 @@ POST /segments
 ![Пример запроса (POSTMAN)](https://raw.githubusercontent.com/Greaux/backend-trainee-assignment-2023/main/Screenshots/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%81%D0%B5%D0%B3%D0%BC%D0%B5%D0%BD%D1%82%D0%B0.png)
 ### Удаление сегмента:
 DELETE /segments
+
 Удаление сегмента в БД.
 
 Тело запроса: 
@@ -75,6 +78,7 @@ DELETE /segments
 ![Пример запроса (POSTMAN)](https://raw.githubusercontent.com/Greaux/backend-trainee-assignment-2023/main/Screenshots/%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%B5%D0%B3%D0%BC%D0%B5%D0%BD%D1%82%D0%B0.png)
 ### Добавление пользователя в сегменты:
 POST /editUserSegments
+
 Добавление пользователя в сегмент в БД.
 
 Тело запроса:
@@ -89,6 +93,7 @@ POST /editUserSegments
 ![Пример запроса (POSTMAN)](https://raw.githubusercontent.com/Greaux/backend-trainee-assignment-2023/main/Screenshots/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%8E%D0%B7%D0%B5%D1%80%D0%B0%20%D0%B2%20%D1%81%D0%B5%D0%B3%D0%BC%D0%B5%D0%BD%D1%82%D1%8B.png)
 ### Удаление пользователя из сегментов:
 DELETE /editUserSegments
+
 Удаление пользователя из сегментов в БД.
 
 Тело запроса: 
@@ -103,6 +108,7 @@ DELETE /editUserSegments
 ![Пример запроса (POSTMAN)](https://raw.githubusercontent.com/Greaux/backend-trainee-assignment-2023/main/Screenshots/%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%83%20%D1%8E%D0%B7%D0%B5%D1%80%D0%B0%20%D1%81%D0%B5%D0%B3%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2.png)
 ### Получение списка сегментов для пользователя по ID:
 GET /user/:id
+
 Получение списка сегментов из БД
 
 ID пользователя передается напрямую в URL
@@ -117,6 +123,7 @@ ID пользователя передается напрямую в URL
 ![Пример запроса (POSTMAN)](https://raw.githubusercontent.com/Greaux/backend-trainee-assignment-2023/main/Screenshots/%D0%9F%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%B5%D0%B3%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D1%8E%D0%B7%D0%B5%D1%80%D0%B0%20%D0%BF%D0%BE%20ID.png)
 ### Получение списка сегментов для пользователя по username:
 GET /username/:Username
+
 Получение списка сегментов из БД
 
 * username пользователя передается напрямую в URL
