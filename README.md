@@ -26,7 +26,7 @@
 ## Использованные фреймворки
 
 1) Фреймворк для работы с запросами:
-Gofiber - https://github.com/gofiber/fiber/v2
+Gofiber - https://github.com/gofiber/fiber
 
 2) Библиотека для работы с БД
 GORM - https://gorm.io
