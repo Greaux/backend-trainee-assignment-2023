@@ -143,13 +143,14 @@ GET /username/:Username
 (Если плохо видно таблицу за счет прозрачности, нажмите на изображение, видимо проблема с кэшированием github'a)
 
 ![enter image description here](https://raw.githubusercontent.com/Greaux/backend-trainee-assignment-2023/main/Screenshots/%D0%A1%D1%85%D0%B5%D0%BC%D0%B0%D0%91%D0%94.png)
+
 В БД 3 таблицы: 
 1) Таблица пользователей
-`PK - ID`
-`Text - Username`
+- `PK - ID`
+- `Text - Username`
 2) Таблица сегментов
-`PK - ID`
-`Text - Name`
+- `PK - ID`
+- `Text - Name`
 3) Таблица отношения пользователей к сегментам:
-`FK1 - segment_id`
-`FK2 - user_id`
+- `FK1 - segment_id`
+- `FK2 - user_id`
